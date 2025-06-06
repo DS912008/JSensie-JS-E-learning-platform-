@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="2nd.html">
+            <button class="btn">⏮ Previous</button>
+        </a>
+        <h1>JavaScript Output</h1>
+        <a href="4th.html">
+            <button class="btn2">Next ⏭</button>
+        </a>
+    </header>
+    <main>
+        <section class="section1">
+            <h3>JavaScript Display Possibilities</h3>
+            <p>JavaScript can "display" data in different ways:</p>
+            <ul>
+                <li>Writing into an HTML element, using <span>innerHTML</span> or <span>innerText</span></li>
+                <li>Writing into the HTML output using <span>document.write()</span></li>
+                <li>Writing into an alert box, using <span>window.alert()</span></li>
+                <li>Writing into the browser console, using <span>console.log()</span></li>
+            </ul>
+        </section>
+        <section class="secton2">
+            <h3>Using innerHTML</h3>
+            <p>To access an HTML element, you can use the  <span>document.getElementById(id)</span> method.<br><br>
+Use the <span>id</span> attribute to identify the HTML element.<br><br>
+Then use the <span>innerHTML</span> property to change the HTML content of the HTML element:
+</p>
+<div class="example"></div>
+        </section>
+        <section>
+        <p class="yellow"><strong>Note : </strong>
+Changing the innerHTML property of an HTML element is the most common way to display data in HTML.</p></section>
+<section class="section3">
+    <h3>Using innerText</h3>
+<p>To access an HTML element, use the <span>document.getElementById(id)</span> method.<br><br>
+Then use the <span>innerHTML</span> property to change the inner text of the HTML element:</p>
+<div class="example"></div>
+<section>
+<p class="yellow"><strong>Note :</strong>
+Use innerHTML when you want to change an HTML element.<br><br>
+
+Use innerText when you only want to change the plain text.</p>
+</section>
+
+<div class="example"></div>
+</section>
+<section class="section4">
+    <p class="pink">Using document.write() after an HTML document is loaded, will <strong>delete all existing HTML:</strong></p>
+    <div class="example"></div>
+</section>
+
+<section class="section5">
+    <p class="yellow">The document.write() method should only be used for testing.</p>
+    <h3>Using window.alert()</h3>
+    <P>Using window.alert()<br>
+You can use an alert box to display data:</P>
+<div class="example"></div>
+<p>
+    You can skip the <span>window </span>keyword.<br><br>
+    In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. <br><br>
+    This also means that specifying the <span>window</span> keyword is optional:
+</p>
+<div class="example"></div>
+</section>
+
+<section class="section6">
+    <h3>Using console.log()</h3>
+    <p>For debugging purposes, you can call the <span>console.log()</span> method in the browser to display data.</p>
+    <p class="yellow">You will learn more about debugging in a later chapter.</p>
+    <div class="example"></div>
+</section>
+<section class="section7">
+    <h3>JavaScript Print</h3>
+    <p>JavaScript does not have any print object or print methods.<br> <br>
+
+You cannot access output devices from JavaScript.<br><br>
+
+The only exception is that you can call the <span>window.print()</span> method in the browser to print the content of the current window.</p>
+<div class="example"></div>
+</section>
+<div class="exercise"></div>
+    </main>
+    <footer>
+         <p>© 2025 JavaScript Output</p>
+    </footer>
+
+
+</body>
+</html>
