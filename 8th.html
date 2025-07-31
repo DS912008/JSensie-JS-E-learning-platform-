@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Let</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="7th.html">
+            <button class="btn">⏮ Previous</button>
+        </a>
+        <h1>JavaScript Let</h1>
+        <a href="9th.html">
+            <button class="btn2">Next ⏭</button>
+        </a>
+    </header>
+    <main>
+        <section>
+            <div class="green">
+                The <span>let</span> keyword was introduced in ES6 (2015)<br><br>
+
+Variables declared with <span>let</span> have <strong>Block Scope</strong><br><br>
+
+Variables declared with <span>let</span> must be <strong>Declared</strong> before use<br><br>
+
+Variables declared with <span>let</span> cannot be <strong>Redeclared</strong> in the same scope
+            </div>
+        
+        <h3>Block Scope</h3>
+        <p>Before ES6 (2015), JavaScript did not have <strong>Block Scope</strong>.<br><br>
+
+JavaScript had <strong>Global Scope</strong> and <strong>Function Scope</strong>.<br><br>
+
+ES6 introduced the two new JavaScript keywords: <span>let</span> and <span>const.</span><br><br>
+
+These two keywords provided <strong>Block Scope</strong> in JavaScript:</p>
+        
+        <div class="example"></div>
+        </section>
+        
+        <section>
+            <h3>Global Scope</h3>
+            Variables declared with the <span>var</span> always have <strong>Global Scope.</strong>
+
+Variables declared with the <span>var</span> keyword can NOT have block scope:
+<div class="example"></div>
+
+        </section>
+        <section>
+            <h3>Cannot be Redeclared</h3>
+            Variables defined with <span>let</span> <strong>can not</strong> be redeclared.<br><br>
+
+You can not accidentally redeclare a variable declared with <span>let</span>.
+<div class="grey">
+    With <span>let</span> you <strong>can not</strong> do this:<br><br>
+    <div class="white">
+        let x = "John Doe";<br>
+
+let x = 0;
+    </div>
+</div>
+Variables defined with <span>var</span> <strong>can</strong> be redeclared.
+<div class="grey">
+    With <span>var</span> you <strong>can</strong> do this:<br><br>
+    <div class="white">
+        var x = "John Doe";<br><br>
+var x = 0;
+</div>
+        </section>
+<section>
+    <h3>Redeclaring Variables</h3><br>
+    Redeclaring a variable using the var keyword can impose problems.<br><br>
+
+Redeclaring a variable inside a block will also redeclare the variable outside the block:
+<div class="example"></div>
+Redeclaring a variable using the let keyword can solve this problem.<br><br>
+
+Redeclaring a variable inside a block will not redeclare the variable outside the block:
+<div class="example"></div>
+</section>
+<section>
+    <h3>Difference Between var, let and const
+</h3>
+<table>
+    <tr class="grey">
+        <th>    </th>
+        <th>Scope  </th>
+        <th>Redeclare   </th>
+        <th>Reassign  </th>
+        <th>Hoisted  </th>
+        <th>Binds this   </th>
+    </tr>
+    <tr >
+        <td class="w">var</td>
+        <td class="w">No</td>
+        <td class="w">Yes</td>
+        <td class="w">Yes</td>
+        <td class="w">Yes</td>
+        <td class="w">Yes</td>
+    </tr>
+     <tr >
+        <td >let</td>
+        <td >Yes</td>
+        <td >No</td>
+        <td >Yes</td>
+        <td>No</td>
+        <td >No</td>
+    </tr>
+     <tr >
+        <td class="w">const</td>
+        <td class="w">Yes</td>
+        <td class="w">No</td>
+        <td class="w">No</td>
+        <td class="w">No</td>
+        <td class="w">No</td>
+    </tr>
+
+</table>
+</section>
+<section>
+    <h3>What is Good?</h3>
+    <span>let</span> and <span>const</span> have <strong>block scope.</strong><br><br>
+
+<span>let</span> and <span>const</span> can not be <strong>redeclared.</strong><br><br>
+
+<span>let</span> and <span>const</span> must be <strong>declared</strong> before use.<br><br>
+
+<span>let</span> and  <span>const</span> does <strong>not bind </strong>to this.<br><br>
+
+<span>let</span> and <span>const</span> are <strong>not hoisted.</strong>
+
+<h3> What is Not Good?</h3>
+<span>var</span> does not have to be declared.
+
+<span>var</span> is hoisted.
+
+<span>var</span> binds to this.
+</section>
+<section>
+   The <span>let</span> and <span>const</span> keywords are not supported in Internet Explorer 11 or earlier.
+
+The following table defines the first browser versions with full support: 
+</section>
+<section>
+<table border="1">
+    <tr>
+        <th><img src="image.png"></th>
+         <th><img src="image2.png"></th>
+          <th><img src="image3.png"></th>
+        <th><img src="image4.png"></th>
+        <th><img src="image5.png"></th>
+
+    </tr>
+    <tr>
+        <td>Chrome 49</td>
+        <td>Edge 12</td>
+        <td>Firefox 36</td>
+        <td>Safari 11</td>
+        <td>Opera 36</td>
+    </tr>
+      <tr>
+        <td class="w">Mar, 2016</td>
+        <td class="w">Jul, 2015</td>
+        <td class="w">Jan, 2015</td>
+        <td class="w">Sep, 2017</td>
+        <td class="w">Mar, 2016</td>
+    </tr>
+</table>
+</section>
+<section>
+    <h3>Redeclaring</h3>
+    <p>Redeclaring a JavaScript variable with var is allowed anywhere in a program:</p>
+    <div class="example"></div>
+    <p>With let, redeclaring a variable in the same block is NOT allowed:</p>
+    <div class="example"></div>
+    Redeclaring a variable with let, in another block, IS allowed:
+    <div class="example"></div>
+</section>
+<section>
+    <h3>Let Hoisting</h3>
+    Variables defined with <span>var</span> are <strong>hoisted</strong> to the top and can be initialized at any time.<br><br>
+
+Meaning: You can use the variable before it is declared:
+<div class="example"></div>
+<p>If you want to learn more about hoisting, study the chapter JavaScript Hoisting.<br><br>
+
+Variables defined with let are also hoisted to the top of the block, but not initialized.<br><br>
+
+Meaning: Using a let variable before it is declared will result in a <span>ReferenceError:</span></p><br><br>
+<div class="example"></div>
+</section>
+<div class="exercise"></div>
+        </main>
+    <footer>
+        <p>© 2025 JavaScript Let</p>
+    </footer>
+</body>
+</html>

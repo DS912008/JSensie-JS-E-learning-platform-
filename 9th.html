@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Const</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <a href="8th.html">
+            <button class="btn">⏮ Previous</button>
+        </a>
+        <h1>JavaScript Const</h1>
+        <a href="10th.html">
+            <button class="btn2">Next ⏭</button>
+        </a>
+    </header>
+    <main>
+<section>
+    <div class="green">
+The <span>const</span> keyword was introduced in ES6 (2015)
+
+Variables defined with <span>const</span> cannot be <strong>Redeclared</strong>
+
+Variables defined with <span>const</span> cannot be <strong>Reassigned</strong>
+
+Variables defined with <span>const</span> have <strong>Block Scope</strong>
+
+    </div>
+</section>
+<section>
+<H3>Cannot be Reassigned</H3>
+A variable defined with the <span>const</span> keyword cannot be reassigned:
+<div class="example"></div>
+</section>
+<section>
+    <h3>Must be Assigned</h3>
+    JavaScript <span>const</span> variables must be assigned a value when they are declared:
+    <div class="example"></div>
+    <div class="example"></div>
+</section>
+<section>
+    <div class="yellow">
+        <h3>When to use JavaScript const?</h3>
+        <strong>Always declare a variable with <span>const</span> when you know that the value should not be changed.</strong>
+        <p>Use <span>const</span> when you declare:<br><br>
+        <ul>
+            <li>A new Array</li>
+            <li>A new Object</li>
+            <li>A new Function</li>
+            <li>A new RegExp</li>
+        </ul>
+        
+        </p>
+    </div>
+</section>
+<section>
+    <h3>Constant Objects and Arrays</h3>
+    The keyword <span>const</span> is a little misleading.<br>
+
+It does not define a constant value. It defines a constant reference to a value.<br>
+Because of this you can NOT:<br>
+<ul>
+    <li>Reassign a constant value</li>
+    <li>Reassign a constant array</li>
+    <li>Reassign a constant object</li><br>
+</ul>But you CAN:<br>
+<ul>
+    <li>Change the elements of constant array</li>
+    <li>Change the properties of constant object</li>
+   
+</ul>
+
+</section>
+<section>
+<h3>Constant Arrays</h3>
+You can change the elements of a constant array:
+<div class="example"></div>
+But you can NOT reassign the array:
+<div class="example"></div>
+</section>
+<section>
+<h3>Constant Objects</h3>
+You can change the properties of a constant object:
+<div class="example"></div>
+But you can NOT reassign the object:
+<div class="example"></div>
+</section>
+<section>
+    <h3>Difference Between var, let and const</h3>
+    <table>
+        <tr>
+            <th class="grey"></th>
+            <th class="grey">Scope</th>
+            <th class="grey">Redeclare</th>
+            <th class="grey">Reassign</th>
+            <th class="grey">Hoisted</th>
+            <th class="grey">Binds this</th>
+
+        </tr>
+        <tr>
+            <td class="w">var</td>
+        <td class="w">No</td>
+        <td class="w" >Yes</td>
+        <td class="w">Yes</td>
+        <td class="w">Yes</td>
+ <td class="w">Yes</td>
+    </tr>
+    <tr>
+        <td class="grey" >let</td>
+        <td class="grey">Yes</td>
+           <td class="grey">No</td>
+              <td class="grey">Yes</td>
+              <td class="grey">No</td>
+                 <td class="grey">No</td>
+    </tr>
+    <tr>
+        <td class="w">const</td>
+       <td class="w">Yes</td>
+       <td class="w">No</td>
+       <td class="w">No</td>
+       <td class="w">No</td>
+       <td class="w">No</td>
+    </tr>
+    </table>
+</section>
+<section>
+    <h3>What is Good?
+</h3>
+<span>let</span> and <span>const</span> have <span>block scope.</span><br><br>
+
+<span>let</span> and <span>const</span> can not be <span>redeclared.</span><br><br>
+
+<span>let</span> and <span>const</span> must be <span>declared</span> before use.<br><br>
+
+<span>let</span> and <span>const</span> does <span>not bind</span> to <span>this</span>.<br><br>
+
+<span>let</span> and <span>const</span> are <span>not hoisted.</span><br><br>
+<h3>What is Not Good?</h3>
+
+<span>var</span> does not have to be declared.<br><br>
+
+<span>var</span> is hoisted.<br><br>
+
+<span>var</span> binds to this.<br><br>
+
+</section>
+<section>
+    <h3>Browser Support</h3>
+    The <span>let</span> and <span>const</span> keywords are not supported in Internet Explorer 11 or earlier.<br><br>
+
+The following table defines the first browser versions with full support:<br>
+<table border="1">
+    <tr>
+        <th><img src="image.png"></th>
+         <th><img src="image2.png"></th>
+          <th><img src="image3.png"></th>
+        <th><img src="image4.png"></th>
+        <th><img src="image5.png"></th>
+
+    </tr>
+    <tr>
+        <td>Chrome 49</td>
+        <td>Edge 12</td>
+        <td>Firefox 36</td>
+        <td>Safari 11</td>
+        <td>Opera 36</td>
+    </tr>
+      <tr>
+        <td class="w">Mar, 2016</td>
+        <td class="w">Jul, 2015</td>
+        <td class="w">Jan, 2015</td>
+        <td class="w">Sep, 2017</td>
+        <td class="w">Mar, 2016</td>
+    </tr>
+</table>
+</section>
+<section>
+    <h3>Block Scope</h3>
+    Declaring a variable with <span>const</span> is similar to <span>let</span> when it comes to <strong>Block Scope</strong><br><br>
+
+The x declared in the block, in this example, is not the same as the x declared outside the block:
+<div class="example"></div>
+You can learn more about block scope in the chapter JavaScript Scope.
+
+</section>
+<section>
+    <h3>Redeclaring</h3>
+    Redeclaring a JavaScript <span>var</span> variable is allowed anywhere in a program:
+    <div class="example"></div>
+    Redeclaring an existing <span>var</span> or <span>let</span> variable to <span>const</span>, in the same scope, is not allowed:<br>
+    <div class="example"></div>
+    Reassigning an existing <span>const</span> variable, in the same scope, is not allowed:
+    <div class="example"></div>
+    Redeclaring a variable with <span>const</span>, in another scope, or in another block, is allowed:
+    <div class="example"></div>
+
+
+</section>
+<section>
+    <h3>Hoisting</h3>
+    Variables defined with <span>var</span> are <strong>hoisted</strong> to the top and can be initialized at any time.<br><br>
+
+Meaning: You can use the variable before it is declared:
+<div class="example"></div>
+If you want to learn more about hoisting, study the chapter JavaScript Hoisting.<br><br>
+
+Variables defined with <span>const</span> are also hoisted to the top, but not initialized.<br><br>
+
+Meaning: Using a <span>const</span> variable before it is declared will result in a <span>ReferenceError</span>:
+<div class="example"></div>
+
+</section>
+<div class="exercise"></div>
+    </main>
+<footer>    
+    <p>© 2025 JavaScript const</p>
+   
+</footer>
+</body>
+</html>
